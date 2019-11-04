@@ -3,13 +3,15 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
-; a string type (REG_SZ) value called
+; a string type (REG_SZ) entry called
 ;   `EnableHexNumpad`
 ; with value
 ;   `1`
 ; in the registry key
 ;   `HKEY_CURRENT_USER\Control Panel\Input Method`
-; is necessary for hex input
+; is necessary for hex input to work
+;
+; reboot (or logoff) is mandatory after the first time this entry been added
 
 <!1::Numpad1
 <!2::Numpad2
