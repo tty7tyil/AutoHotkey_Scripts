@@ -3,52 +3,46 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
-; LEFT SINGLE QUOTATION MARK
-^[::
-Send, {U+2018}
-return
+; ---
 
+; LEFT SINGLE QUOTATION MARK
+^[::Send, {U+2018}
 ; RIGHT SINGLE QUOTATION MARK
-^]::
-Send, {U+2019}
-return
+^]::Send, {U+2019}
 
 ; LEFT DOUBLE QUOTATION MARK
-^+[::
-Send, {U+201C}
-return
-
+^+[::Send, {U+201C}
 ; RIGHT DOUBLE QUOTATION MARK
-^+]::
-Send, {U+201D}
-return
+^+]::Send, {U+201D}
 
-; LEFT CORNER BRACKET
-!^[::
-Send, {U+300C}
-return
-
-; RIGHT CORNER BRACKET
-!^]::
-Send, {U+300D}
-return
-
-; LEFT WHITE CORNER BRACKET
-!^+[::
-Send, {U+300E}
-return
-
-; RIGHT WHITE CORNER BRACKET
-!^+]::
-Send, {U+300F}
-return
+; ---
 
 ; PRIME
-^'::
-Send, {U+2032}
-return
-
+^'::Send, {U+2032}
 ; DOUBLE PRIME
-^+'::
-Send, {U+2033}
-return
+^+'::Send, {U+2033}
+
+; ---
+
+; HORIZONTAL ELLIPSIS
+^;::Send, {U+2026}
+; MIDLINE HORIZONTAL ELLIPSIS
+^+;::Send, {U+22EF}
+
+; ---
+
+; LEFT CORNER BRACKET
+!^[::Send, {U+300C}
+; RIGHT CORNER BRACKET
+!^]::Send, {U+300D}
+
+; LEFT WHITE CORNER BRACKET
+!^+[::Send, {U+300E}
+; RIGHT WHITE CORNER BRACKET
+!^+]::Send, {U+300F}
+
+; ---
+
+; FULLWIDTH FULL STOP
+!^.::Send, {U+FF0E}
+
