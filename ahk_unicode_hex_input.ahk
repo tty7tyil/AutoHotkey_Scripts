@@ -3,6 +3,8 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
+#NoTrayIcon
+
 ; a string type (REG_SZ) entry called
 ;   `EnableHexNumpad`
 ; with value
