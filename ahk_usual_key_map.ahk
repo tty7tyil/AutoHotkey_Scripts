@@ -3,7 +3,7 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
-#NoTrayIcon
+;#NoTrayIcon
 
 ; ---
 
@@ -25,3 +25,9 @@ Escape::`
 !^Up::Volume_Up
 !^Down::Volume_Down
 !^Space::Media_Play_Pause
+
+; ---
+
+^g::Send, {LButton}
+^h::Send, {RButton}
+^b::Send, {MButton}
