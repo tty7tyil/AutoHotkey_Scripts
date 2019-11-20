@@ -9,7 +9,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 CapsLock::Escape
 Escape::`
-!^Escape::CapsLock
+!^CapsLock::CapsLock
 
 ; ---
 
