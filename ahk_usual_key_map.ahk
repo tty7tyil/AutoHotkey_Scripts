@@ -28,6 +28,6 @@ Escape::`
 
 ; ---
 
-^g::Send, {LButton}
-^h::Send, {RButton}
-^b::Send, {MButton}
+^+g::Send, {LButton}
+^+h::Send, {RButton}
+^+b::Send, {MButton}
