@@ -28,6 +28,18 @@ Escape::`
 
 ; ---
 
-^+k::Send, {LButton}
-^+l::Send, {RButton}
-^+,::Send, {MButton}
+::/utc::
+FormatTime, iso_8601, %A_NowUTC%, yyyyMMddTHHmmssZ
+Send, %iso_8601%
+Return
+
+::/utcl::
+FormatTime, iso_8601, %A_NowUTC%, yyyy-MM-ddTHH:mm:ssZ
+Send, %iso_8601%
+Return
+
+; ---
+
+; ^+k::Send, {LButton}
+; ^+l::Send, {RButton}
+; ^+,::Send, {MButton}
