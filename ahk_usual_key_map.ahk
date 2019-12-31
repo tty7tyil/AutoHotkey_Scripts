@@ -28,15 +28,18 @@ Escape::`
 
 ; ---
 
-::/utc::
-FormatTime, iso_8601, %A_NowUTC%, yyyyMMddTHHmmssZ
-Send, %iso_8601%
-Return
+send_iso_8601(date_time_format) {
+    FormatTime, iso_8601, %A_NowUTC%, %date_time_format%
+    Send, %iso_8601%
+    Return
+}
 
-::/utcl::
-FormatTime, iso_8601, %A_NowUTC%, yyyy-MM-ddTHH:mm:ssZ
-Send, %iso_8601%
-Return
+:x:/utcd::send_iso_8601("yyyyMMdd")
+:x:/utcdl::send_iso_8601("yyyy-MM-dd")
+:x:/utct::send_iso_8601("HHmmssZ")
+:x:/utctl::send_iso_8601("HH:mm:ssZ")
+:x:/utcdt::send_iso_8601("yyyyMMddTHHmmssZ")
+:x:/utcdtl::send_iso_8601("yyyy-MM-ddTHH:mm:ssZ")
 
 ; ---
 
