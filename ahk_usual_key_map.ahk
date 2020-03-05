@@ -28,6 +28,10 @@ Escape::`
 
 ; ---
 
+!^t::WinSet, AlwaysOnTop, Toggle, A
+
+; ---
+
 send_iso_8601(date_time_format) {
     FormatTime, iso_8601, %A_NowUTC%, %date_time_format%
     Send, %iso_8601%
