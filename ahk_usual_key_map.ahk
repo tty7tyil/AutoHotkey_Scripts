@@ -44,6 +44,7 @@ send_iso_8601(date_time_format) {
 :x:/utctl::send_iso_8601("HH:mm:ssZ")
 :x:/utcdt::send_iso_8601("yyyyMMddTHHmmssZ")
 :x:/utcdtl::send_iso_8601("yyyy-MM-ddTHH:mm:ssZ")
+:x:/utcdth::send_iso_8601("yyyy-MM-dd HH:mm:ss Z")
 
 ; ---
 
